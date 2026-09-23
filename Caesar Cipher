@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+
+    string n;
+
+    scanf("\n"); //To avoid an error in taking the user input..
+    getline(cin,n);
+
+    for(int i=0;i<n.length();i++)
+        {
+            if(n[i]>='a'&&n[i]<='z')
+            {
+                char c= n[i]-'a';
+                c=((c-x+26)%26)+'a'; //Using a formula of Caesar Cipher
+                printf("%c",c);
+            }
+          
+            else if(n[i]==' ')
+            {
+                cout<<n[i];
+            }
+        }
+}
