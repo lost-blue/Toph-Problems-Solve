@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int x; //long long taken because of the range given!
+    cin>>x;
+
+    cout<<x<<endl;
+
+    return 0;
+}
+// Just a simple taking of input and printing it.
