@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y;
+    char s;
+
+// Using string/char for input because of the range given in the question, an integer can't hold such a big number.
+// Using integer for inputs can cause wrong ans for other test cases.
+
+    while((s=getchar())!=EOF && s!=' ' && s!='\n') 
+        {
+            x = s-'0'; // This step is to convert String/character to integer!
+        }
+
+    while((s=getchar())!=EOF && s!=' ' && s!='\n')
+        {
+            y = s-'0';
+        }
+
+    if((x+y)%2==0)
+    {
+        cout<<"Black"<<endl;
+    }
+    else
+    {
+        cout<<"White"<<endl;
+    }
+
+    
+    return 0;
+}
