@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,co=0;
+    cin>>x;
+
+    if(x==1 || x==0)
+    {
+        cout<<"No"<<endl;
+        return 0;
+    }
+    else
+    {
+        for(int i=1;i<=x;i++)
+        {
+            if(x%i==0)
+            {
+                co++;
+            }
+        }
+
+        if(co==2)
+        {
+            cout<<"Yes"<<endl;
+        }
+        else
+            cout<<"No"<<endl;
+    }
+
+    return 0;
+}
