@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int x;
+    cin>>x;
+
+    int fiveHun = x/500;
+    int oneHun = (x%500)/100;
+    int fifty = ((x%500)%100)/50;
+    int ten = (((x%500)%100)%50)/10;
+    int five = ((((x%500)%100)%50)%10)/5;
+    int one = ((((x%500)%100)%50)%10)%5;
+
+    if(one > 0)
+    {
+        while(one--){cout<<"1 ";}
+    }
+    if(five > 0)
+    {
+        while(five--){cout<<"5 ";}
+    }
+    if(ten > 0)
+    {
+        while(ten--){cout<<"10 ";}
+    }
+    if(fifty > 0)
+    {
+        while(fifty--){cout<<"50 ";}
+    }
+    if(oneHun > 0)
+    {
+        while(oneHun--){cout<<"100 ";}
+    }
+    if(fiveHun > 0)
+    {
+        while(fiveHun--){cout<<"500 ";}
+    }
+
+    return 0;
+}
