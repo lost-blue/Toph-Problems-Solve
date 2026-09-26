@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int x,sq;
+    cin>>x;
+    sq=x*x;
+    cout<<sq<<endl;
+
+    return 0;
+}
