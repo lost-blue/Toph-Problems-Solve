@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+
+    double area = acos(-1)*x*x;
+
+    cout<<fixed<<setprecision(10)<<area<<endl;
+
+    return 0;
+}
